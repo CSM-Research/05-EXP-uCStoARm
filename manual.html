@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rhetorical move annotation manual</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="container">
+		<h1 class="jumbotron alert-info" style="text-align: center">Annotation manual</h1>
+
+		<p>
+			First, it is necessary to understand that an abstract can be divided acording to 5 different headers: context, objective, methods, results, conclusions.
+		</p>
+		<p>
+			Each of these contains specific information about a scientific study:
+			<ul>
+				<li>Context: may contain a brief description of topics that are important for understanding the work. In addition, the context may also contain the research problem and motivation of researchers to execute the study </li>
+				<li>Objective: contains a clear indication of the researchers' objective when conducting the research. </li>
+				<li>Method: contains the tools, strategies or a brief description of actions taken by the researchers to achieve the objective presented.</li>
+				<li>Results: what was obtained by the researchers in the execution of the study is presented. The results can be presented by describing the data obtained qualitatively or using statistics.</li>
+				<li>Conclusions: shows what can be concluded from the results obtained.</li>
+
+			</ul>
+		</p>
+
+		<hr>
+		<p>
+			Here are some examples of annotation:
+		</p>
+
+		<h4>Example 01</h4>
+		<p>Abstract:</p>
+		<p style="text-align: justify;"><span class="context">Users tend to store huge amounts of files, of various formats, on their personal computers. </span><span class="context">As a result, finding a specific, desired file within the file system is a challenging task. </span><span class="objective">This article addresses the desktop search problem by considering various techniques for ranking results of a search query over the file system.</span><span class="method"> First, basic ranking techniques, which are based on various file features (e.g., file name, access date, file size, etc.), are considered and their effectiveness is empirically analyzed.</span><span class="method"> Next, two learning-based ranking schemes are presented, and are shown to be significantly more effective than the basic ranking methods. </span><span class="method">Finally, a novel ranking technique, based on query selectiveness, is considered for use during the cold-start period of the system.</span><span class="result"> This method is also shown to be empirically effective, even though it does not involve any learning.</span>
+		</p>
+
+		<div class="card alert-warning" style="padding: 20px" >
+			<h4>Annotation</h4>
+			<p>For the annotation, each abstract must be separated into sentences. Next, the sentences must be analyzed and a rhetorical movement must be attributed to each one.</p>
+			<p>
+				<div><strong>Sentence 01</strong></div>
+				<div style="text-align: justify;"><div class="context">Users tend to store huge amounts of files, of various formats, on their personal computers. → <strong>context</strong></div> 
+				<div><strong>Sentence 02</strong></div>
+
+				<div class="context">As a result, finding a specific, desired file within the file system is a challenging task. → <strong>context</strong> </div>
+
+			</p>
+
+			<p>
+				<div><strong>Sentence 03</strong></div>
+				<div class="objective">This article addresses the desktop search problem by considering various techniques for ranking results of a search query over the file system. → <strong>objective</strong></div>
+			</p>
+			<p>
+				<div><strong>Sentence 04</strong></div>
+				<div class="method"> First, basic ranking techniques, which are based on various file features (e.g., file name, access date, file size, etc.), are considered and their effectiveness is empirically analyzed. → <strong>method</strong></div>
+
+				<div><strong>Sentence 05</strong></div>
+				<div class="method"> Next, two learning-based ranking schemes are presented, and are shown to be significantly more effective than the basic ranking methods. → <strong>method</strong> </div>
+
+				<div><strong>Sentence 06</strong></div>	
+				<div class="method">Finally, a novel ranking technique, based on query selectiveness, is considered for use during the cold-start period of the system. → <strong>method</strong></div>
+			</p>
+
+			<p>
+				<div><strong>Sentence 07</strong></div>
+				<div class="result"> This method is also shown to be empirically effective, even though it does not involve any learning. → <strong>result</strong></div>
+			</p>
+		</div>
+
+	</div>
+	<br>
+	<p><strong>Tip 01</strong>: Some abstracts follow a logical sequence to present data. Therefore, the chances of a <strong>context</strong> being at the beginning of the abstract are greater, just as the chance of a <strong>conclusion</strong> being at the end of the text is also greater.</p>
+	<p><strong>Tip 02</strong>: Some headings have words that give clues to the rhetorical movement. For example: in sentence 03 we find "This article addresses". These words indicate that what follows is the purpose of the article. Another clue like this can be found in sentence 07 "shown to be empirically effective". This clue makes it clear that the sentence represents a result of the study.
+	</p>
+
+	<hr>
+
+	<h4>Example 02</h4>
+	<p>Abstract:</p>
+
+	<span class="context">In a recent article, Nakhleh, Ringe and Warnow introduced perfect phylogenetic networks—a model of language evolution where languages do not evolve via clean speciation—and formulated a set of problems for their accurate reconstruction.</span><span class="context"> Their new methodology assumes networks, rather than trees, as the correct model to capture the evolutionary history of natural languages.</span><span class="context"> They proved the NP-hardness of the problem of testing whether a network is a perfect phylogenetic one for characters exhibiting at least three states, leaving open the case of binary characters, and gave a straightforward brute-force parameterized algorithm for the problem of running time O(3 k n), where k is the number of bidirectional edges in the network and n is its size.</span><span class="method"> In this paper, we first establish the NP-hardness of the binary case of the problem.</span><span class="method"> Then we provide a more efficient parameterized algorithm for this case running in time O(2 k n 2).</span><span class="method"> The presented algorithm is very simple, and utilizes some structural results and elegant operations developed in this paper that can be useful on their own in the design of heuristic algorithms for the problem.</span><span class="result"> The analysis phase of the algorithm is very elegant using amortized techniques to show that the upper bound on the running time of the algorithm is much tighter than the upper bound obtained under a conservative worst-case scenario assumption.</span><span class="conclusion"> Our results bear significant impact on reconstructing evolutionary histories of languages–particularly from phonological and morphological character data, most of which exhibit at most two states (i.e., are binary), as well as on the design and analysis of parameterized algorithms.</span>
+
+</p>
+
+<div class="card alert-warning" style="padding: 20px" >
+	<h4>Annotation</h4>
+	<p>For the annotation, each abstract must be separated into sentences. Next, the sentences must be analyzed and a rhetorical movement must be attributed to each one.</p>
+	<p>
+		<div><strong>Sentence 01</strong></div>
+		<div style="text-align: justify;"><div class="context">In a recent article , Nakhleh , Ringe and Warnow introduced perfect phylogenetic networks 'a model of language evolution where languages do not evolve via clean speciation'and formulated a set of problems for their accurate reconstruction. → <strong>context</strong></div> 
+		<div><strong>Sentence 02</strong></div>
+
+		<div class="context">Their new methodology assumes networks , rather than trees , as the correct model to capture the evolutionary history of natural languages . → <strong>context</strong> </div>
+
+		<div><strong>Sentence 03</strong></div>
+		<div class="context">They proved the NP-hardness of the problem of testing whether a network is a perfect phylogenetic one for characters exhibiting at least three states , leaving open the case of binary characters , and gave a straightforward brute-force parameterized algorithm for the problem of running time O( 3 k n ) , where k is the number of bidirectional edges in the network and n is its size. → <strong>context</strong> </div>
+
+	</p>
+
+	<p>
+		<div><strong>Sentence 04</strong></div>
+		<div class="method">In this paper , we first establish the NP-hardness of the binary case of the problem. → <strong>objective</strong></div>
+		
+		<div><strong>Sentence 05</strong></div>
+		<div class="method"> Then we provide a more efficient parameterized algorithm for this case running in time O( 2 k n 2 ). → <strong>method</strong></div>
+
+		<div><strong>Sentence 06</strong></div>
+		<div class="method"> The presented algorithm is very simple , and utilizes some structural results and elegant operations developed in this paper that can be useful on their own in the design of heuristic algorithms for the problem. → <strong>method</strong> </div>
+
+		<div><strong>Sentence 07</strong></div>	
+		<div class="method">The analysis phase of the algorithm is very elegant using amortized techniques. → <strong>method</strong></div>
+	</p>
+
+	<p>
+		<div><strong>Sentence 08</strong></div>
+		<div class="result"> to show that the upper bound on the running time of the algorithm is much tighter than the upper bound obtained under a conservative worst-case scenario assumption. → <strong>result</strong></div>
+	</p>
+
+	<p>
+		<div><strong>Sentence 09</strong></div>
+		<div class="conclusion"> Our results bear significant impact on reconstructing evolutionary histories of languages - particularly from phonological and morphological character data , most of which exhibit at most two states ( i .e . , are binary ) , as well as on the design and analysis of parameterized algorithms. → <strong>conclusion</strong></div>
+	</p>
+</div>
+
+</div>
+<br>
+<p><strong>Tip 03</strong>: Be careful with the sentences interpretation. For example: sentence 9 presents a conclusion, however, it beggins with "Our results". This can mislead you and annotate as a result. Only a careful reading can lead you to right annotation</p>
+</body>
+
+<style type="text/css">
+	
+	.context{
+		color: red;
+	}
+
+	.objective{
+		color:green;
+	}
+
+	.method{
+		color:#0070e4;
+	}
+
+	.result{
+		color:#ff00f7;
+	}
+
+	.conclusion{
+		color:#bf9f00;
+	}
+
+</style>
+</html>
